@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "常德闯",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#000"
+  }
+}
