@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/resume/resume",
-    "pages/index/index"
+    "pages/map/map"
     
   ],
   "window":{
