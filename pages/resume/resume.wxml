@@ -1,0 +1,156 @@
+<view class='body'>
+  <image class='bn' mode='widthFix' src='/img/bn.jpg'></image>
+  <view class='header'>
+    <image class='mylogo' mode='widthFix' src='/img/mylogo.jpg'></image>
+    <view class='name'>常德闯</view>
+  </view>
+  <view class='container'>
+    <text class='motto'>好好扮演自己的角色，做自己该做的事。</text>
+    <view class='user-info'>
+      <view class='item'>
+        <view>
+          <image src='/img/icon/job_title.png'></image>
+          前端开发工程师
+        </view>
+        <view>
+          <image src='/img/icon/user.png'></image>
+          大专 三年工作经验 北京
+        </view>
+      </view>
+      <view class='item'>
+        <view bindtap='phone'>
+          <image src='/img/icon/phone.png'></image>
+          17600380654
+        </view>
+        <view bindtap='mail'>
+          <image src='/img/icon/mail.png'></image>
+          15264086654@163.com
+        </view>
+
+      </view>
+    </view>
+    <!-- userinfo -->
+    <template is="title" data="{{title:'求职意向'}}" />
+    <!-- 求职意向 -->
+    <view class='job-for'>
+      <view class='item'>
+        <view>工作性质： 全职 </view>
+        <view>期望职业： 前端开发工程师 </view>
+      </view>
+      <view class='item'>
+        <view>工作地区： 北京 </view>
+        <view>目前状况： 离职</view>
+      </view>
+      <view class='item'>
+        <view>期望薪资： 16K </view>
+      </view>
+    </view>
+    <!--核心技能-->
+    <template is="title" data="{{title:'核心技能'}}" />
+    <view class='skills'>
+      <view class='item' wx:for='{{skills}}'>
+        <view class='text'>{{index+1}}: {{item.text}}</view>
+        <!-- <wxc-progress stroke-width='2' percent="{{item.percent}}" active-color="green,red"></wxc-progress> -->
+      </view>
+    </view>
+    <!-- 工作经历 -->
+    <template is="title" data="{{title:'工作经历'}}" />
+    <view class='job-line'>
+      <view wx:for='{{job}}' class='item'>
+        <view class='job-header'>
+          <view class='company'>
+            <view>{{item.name}}</view>
+            <view>{{item.date}}</view>
+          </view>
+          <view class='job-tit'>{{item.tit}}</view>
+        </view>
+        工作内容：
+        <view class='job-con'>
+
+          <view wx:for='{{item.content}}'>
+            <view>{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 项目经验 -->
+    <template is="title" data="{{title:'项目经验'}}" />
+    <view class='project'>
+      <view class='tit'>
+        <view>项目名称：优录取 </view>
+        <view>开发环境：windows</view>
+        <view>后端环境：PHP</view>
+        <view>构建工具：GULP</view>
+      </view>
+      <view>线上地址：http://uluqu.com</view>
+      <view>运用技术：HTML5+CSS3+BootStrap+JQuery;</view>
+      <view style='padding:20rpx 0 10rpx'>项目介绍：</view>
+      <view class='bg-txt' style='text-indent:2em;'>优录取（uluqu）是一 款以职业、专业及院校分数预测为导向的高考志愿填报指导系统。 线上与线下相结合 线下一对一服务。 网站内容主要包括高考志愿推荐和自主招生。 线上可以模拟报志愿（点击导航报志愿，填写分数，输入批次分数线，即可查看推荐的院校）。
+      </view>
+      <view style='padding:20rpx 0 10rpx'>工作职责：</view>
+      <view class='bg-txt' style='text-indent:2em;'>编写平台所用的不同组件,配个后端嵌套网页,完成平台的开发。</view>
+    </view>
+    <view class='project'>
+      <view class='tit'>
+        <view>项目名称：Cancan官网 </view>
+        <view>开发环境：windows</view>
+        <view>后端环境：PHP</view>
+        <view>构建工具：GULP</view>
+      </view>
+      <view>线上地址：https://www.cancangroup.com</view>
+      <view>运用技术：HTML5+CSS3+BootStrap+JQuery;</view>
+      <view style='padding:20rpx 0 10rpx'>项目介绍：</view>
+      <view class='bg-txt' style='text-indent:2em;'>
+        开发Cancan财务系统的的宣传以及产品展示页面
+      </view>
+      <view style='padding:20rpx 0 10rpx'>工作职责：</view>
+      <view class='bg-txt' style='text-indent:2em;'>编写平台所用的不同组件,配个后端嵌套网页,完成平台的开发。</view>
+    </view>
+    <view class='project'>
+      <view class='tit'>
+        <view>项目名称：Cancan财务系统 </view>
+        <view>开发环境：NODE</view>
+        <view>后端环境：PHP</view>
+        <view>构建工具：GULP</view>
+      </view>
+      <view>线上地址：https://www.cancangroup.com</view>
+      <view>运用技术：React+Antd+React-Router+ES6+Less;</view>
+      <view style='padding:20rpx 0 10rpx'>项目介绍：</view>
+      <view class='bg-txt' style='text-indent:2em;'>
+        针对中小型企业开发的一款智能化的财务系统, 帮助企业同时管理多个公司的跨境业务和现金流, 内含众多小项目模块 （报销，付款，预支，出差，预算，发票，企业管理，财务管理等众多功能), 并针对不同身份和购买的不同套餐展示已不同的功能.
+      </view>
+      <view style='padding:20rpx 0 10rpx'>工作职责：</view>
+      <view class='bg-txt' style='text-indent:2em;'>
+        构建维护前端开发环境, 利用react开发简介易维护的代码, 配合产品，设计高效还原成网页。 从技术方面讲，主要运用React+Antd的开发组合来实现功能的开发。
+      </view>
+    </view>
+    <view style='border:none' class='project'>
+      <view class='tit'>
+        <view>项目名称：个人博客</view>
+        <view>开发环境：NODE</view>
+        <view>服务器：github page</view>
+        <view>构建工具：WEBPACK4</view>
+      </view>
+      <view>线上地址：https://www.20170422.com</view>
+      <view>运用技术：React+Antd+React-Router+React-redux+axios+ES6+Less</view>
+      <view style='padding:20rpx 0 10rpx'>项目介绍：</view>
+      <view class='bg-txt' style='text-indent:2em;'>
+        写一些自己喜欢的
+      </view>
+      <view style='padding:20rpx 0 10rpx'>工作职责：</view>
+      <view class='bg-txt' style='text-indent:2em;'>
+        搭建react+react-rudux+react-router+es6的前端开发环境,
+
+      </view>
+    </view>
+    <view class='tem-containe-end'>END </view>
+  </view>
+  <!-- <component-nav abc='efg' /> -->
+</view>
+
+<!-- 分割线标题 -->
+<template name="title">
+  <view class='tem-line'>
+    <view class='tem-container'>{{title}} </view>
+  </view>
+</template>

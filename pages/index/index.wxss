@@ -1,39 +1,12 @@
-.container {
+.container{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* background: red; */
+}
+.map{
+  width: 100%;
   height: 100%;
-  min-height: 100vh;
-  display: flex;
-  background: #efffe0;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.text {
-  display: flex;
-  padding: 0px 20px;
-  flex-direction: column;
-}
-
-name {
-  text-align: center;
-}
-
-author {
-  text-align: center;
-  font-size: 12px;
-  margin-bottom: 20px;
-}
-
-.item {
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.button {
-  text-align: center;
-  background: #000;
-  color: #cab9b9;
-  height: 30px;
-  line-height: 30px;
-  font-size: 14px;
 }

@@ -1,13 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <view class='text'>
-  <name>{{text.title}}</name>
-  <author>{{text.author}}</author>
-  <view class='item' wx:for="{{text.content}}">
-    {{item}}
-  </view>
-  </view>
-  <view bindtap='getText'  class='button'>
-      再来一篇
-  </view>
+ <map id="map" bindtap="{{bindtap}}" controls="{{controls}}" bindcontroltap="controltap"  polyline="{{polyline}}" class='map' show-location longitude="{{location.longitude}}" latitude="{{location.latitude}}"></map> 
+<text>{{text}}</text>
 </view>

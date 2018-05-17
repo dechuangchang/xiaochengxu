@@ -3,8 +3,13 @@ App({
   onLaunch(options){
     
   },
+  SystemInfo:null,
   onShow(options){
-    console.log(options)
+    wx.getSystemInfo({
+      success: (res)=> {
+        this.SystemInfo = res
+      }
+    })
   },
   onHide(){
 

@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor": "#ebebeb",
+  "navigationBarTitleText": "个人简历",
+  "navigationBarTextStyle": "black",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": false,
+  "backgroundColor": "#ebebeb",
+  "usingComponents": {
+    "wxc-progress": "../../dist/packages/@minui/wxc-progress/dist/index",
+    "component-nav": "../../component/nav/index"
+  }
+}

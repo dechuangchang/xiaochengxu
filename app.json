@@ -1,13 +1,15 @@
 {
   "pages":[
+    "pages/resume/resume",
     "pages/index/index"
+    
   ],
   "window":{
-    "navigationBarBackgroundColor": "#efffe0",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "常德闯",
     "navigationBarTextStyle":"black",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh":true,
-    "backgroundColor":"#efffe0"
+    "backgroundColor":"#fff"
   }
 }
